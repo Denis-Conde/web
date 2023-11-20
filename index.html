@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pixels</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+				<a href="./index.html"><img src="./images/logo.png" class="logo-img"></a>
+		</div>
+		<nav class="navbar">
+			<a href="#home">INICIO</a>
+			<a href="#genres">GÉNEROS</a>
+			<a href="#movies">PÉLICULAS</a>
+			<a href="#series">SERIES</a>
+			<a href="#about">ACERCA DE</a>
+			<button class="btnLogin">INICIAR SESIÓN</button>
+		</nav>
+	</header>
+
+	<main  id="home">
+		<div class="banner">
+			<div class="container">
+				<div class="wrapper">
+					<span class="icon-close">
+						<i class="fa-solid fa-xmark"></i>
+					</span>
+					<div class="logreg-box"> 
+						<!--Login-->
+						<div class="form-box login">
+							<div class="logreg-title">
+								<h2>Iniciar sesión</h2>
+							</div>
+							<form>
+								<div class="input-box">
+									<span class="icon">
+										<i class="fa-solid fa-envelope"></i>
+									</span>
+									<input type="email" required>
+									<label>Email</label>
+								</div>
+								<div class="input-box">
+									<span class="icon">
+										<i class="fa-solid fa-lock"></i>
+									</span>
+									<input type="password" required>
+									<label>Contraseña</label>
+								</div>
+								<div class="remember">
+									<label><input type="checkbox">Recuérdame</label>
+									<a href="#">Olvidaste tu contraseña?</a>
+								</div>
+								<button type="submit" class="btn-login">Iniciar sesión</button>
+								<div class="logreg-link">
+									<p>No tienes una cuenta?<a href="#" class="register-link"> Registrar</a></p>
+								</div>
+							</form>
+						</div>
+						<!--Registro-->
+						<div class="form-box register">
+							<div class="logreg-title">
+								<h2>Registrarse</h2>
+							</div>
+							<form>
+								<div class="input-box">
+									<span class="icon">
+										<i class="fa-solid fa-user"></i>
+									</span>
+									<input type="text" required>
+									<label>Nombre completo</label>
+								</div>
+								<div class="input-box">
+									<span class="icon">
+										<i class="fa-solid fa-envelope"></i>
+									</span>
+									<input type="email" required>
+									<label>Email</label>
+								</div>
+								<div class="input-box">
+									<span class="icon">
+										<i class="fa-solid fa-lock"></i>
+									</span>
+									<input type="password" required>
+									<label>Contraseña</label>
+								</div>
+								<div class="remember">
+									<label><input type="checkbox">Estoy de acuerdo con los términos y condiciones</label>
+								</div>
+								<button type="submit" class="btn-login">Registrar</button>
+								<div class="logreg-link">
+									<p>Ya tienes una cuenta?<a href="#" class="login-link"> Iniciar sesión</a></p>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="media-options">
+						<a href="#">
+							<i class="fa-brands fa-google"></i>
+							<span>Registrarse con Google</span>
+						</a>
+						<a href="#">
+							<i class="fa-brands fa-facebook"></i>
+							<span>Registrarse con Facebook</span>
+						</a>
+					</div>
+				</div>
+				<div class="title">
+					<img src="./images/title-avatar.png">
+				</div>
+				<div class="banner-info">
+					<div class="banner-genre">
+						<i class="fa-solid fa-film"></i>
+						<span>Ciencia Ficción | Acción</span>
+					</div>
+					<div class="banner-year">
+						<i class="fa-regular fa-calendar"></i>
+						<span>2022</span>
+					</div>
+					<div class="banner-duration">
+						<i class="fa-solid fa-clock"></i>
+						<span>3h 12m</span>
+					</div>
+					<div class="banner-quality">4K</div>
+				</div>
+				<p class="description">
+					Jake Sully y Ney'tiri han formado una familia y estan haciendo todo lo posible para permanecer juntos. Sin embargo, deberán abandonar su hogar y explorar las regiones de Pandora. Cuando resurge una antigua amenaza, Jake debe librar una guerra difícil contra los humanos.
+				</p>
+				<div class="btn">
+					<a href="#"><i class="fa-solid fa-play"></i>Ver ahora!</a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="movies" id="movies">
+		<div class="container">
+
+			<div class="section-movies" id="popular">
+				<h2>Popular</h2>
+				<div class="movies-container">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/oppenheimer.jpg">
+						</div>
+						<h3>Oppenheimer</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/loki.jpg">
+						</div>
+						<h3>Loki</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/theMarvel.jpg">
+						</div>
+						<h3>The Marvel</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/monarch.jpg">
+						</div>
+						<h3>Monarch: Legacy of Monsters</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/noWayHome.jpg">
+						</div>
+						<h3>Spider-Man: No Way Home</h3>
+						<span>120 min | Acción</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-movies" id="accion">
+				<h2>Acción</h2>
+				<div class="movies-container">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/johnWick3.jpg">
+						</div>
+						<h3>John Wick 3: Parabellum</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/infinityWar.jpg">
+						</div>
+						<h3>Avengers: Infinity War</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/theCreator.jpg">
+						</div>
+						<h3>The Creator</h3>
+						<span>120 min | Acción</span>
+					</div>
+					
+					
+					<div class="box">
+						<div class="box-img">
+							<img src="images/meg2.jpg">
+						</div>
+						<h3>Meg 2: The Trench</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/johnWick4.jpg">
+						</div>
+						<h3>John Wick Chapter 4</h3>
+						<span>120 min | Acción</span>
+					</div>
+										
+				</div>
+			</div>
+
+			<div class="section-movies" id="terror">
+				<h2>Terror</h2>
+				<div class="movies-container">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/fnat.jpg">
+						</div>
+						<h3>Five Nights at Freddy's</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/trick.jpg">
+						</div>
+						<h3>Trick</h3>
+						<span>120 min | Terror</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/agnes.jpg">
+						</div>
+						<h3>Agnes</h3>
+						<span>120 min | Terror</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/sawx.jpg">
+						</div>
+						<h3>Saw X</h3>
+						<span>120 min | Terror</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/theNum.jpg">
+						</div>
+						<h3>The Num</h3>
+						<span>120 min | Terror</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/oracle.jpg">
+						</div>
+						<h3>Oracle</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/theExorcist.jpg">
+						</div>
+						<h3>The Exorcist</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/whenEvilLurks.jpg">
+						</div>
+						<h3>When Evil Lurks</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/talkToMe.jpg">
+						</div>
+						<h3>Talk to Me</h3>
+						<span>120 min | Acción</span>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="section-movies" id="aventura">
+				<h2>Aventura</h2>
+				<div class="movies-container">
+
+					<div class="box">
+						<div class="box-img">
+							<img src="images/theHungerGames.jpg">
+						</div>
+						<h3>The Hunger Games: The Ballad of Songbirds & Snakes</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/darkland.jpg">
+						</div>
+						<h3>Darkland</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/ballerina.jpg">
+						</div>
+						<h3>Ballerina</h3>
+						<span>120 min | Acción</span>
+					</div>
+					
+					<div class="box">
+						<div class="box-img">
+							<img src="images/expend4bles.jpg">
+						</div>
+						<h3>Expend4bles</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/granTurismo.jpg">
+						</div>
+						<h3>Gran Turismo</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/barbie.jpg">
+						</div>
+						<h3>Barbie</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/indianaJones.jpg">
+						</div>
+						<h3>Indiana Jones</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/theKiller.jpg">
+						</div>
+						<h3>The Killer</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/attackOnTitan.jpg">
+						</div>
+						<h3>Attack on Titan</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/rumble.jpg">
+						</div>
+						<h3>Rumble: Through the Dark</h3>
+						<span>120 min | Acción</span>
+					</div>
+				</div>	
+			</div>
+
+			<div class="section-movies" id="comedia">
+				<h2>Comedia</h2>
+				<div class="movies-container">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/superbad.jpg">
+						</div>
+						<h3>Superbad</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/rickAndMorty.jpg">
+						</div>
+						<h3>Rick and Morty</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/upload.jpg">
+						</div>
+						<h3>Upload</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/nowhere.jpg">
+						</div>
+						<h3>Nowhere</h3>
+						<span>120 min | Acción</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section-movies" id="series">
+				<h2>Series</h2>
+				<div class="movies-container">
+					<div class="box">
+						<div class="box-img">
+							<img src="images/squidGame.jpg">
+						</div>
+						<h3>Squid Game</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/strangerThings.jpg">
+						</div>
+						<h3>Stranger Things</h3>
+						<span>120 min | Acción</span>
+					</div>
+					<div class="box">
+						<div class="box-img">
+							<img src="images/wednesday.jpg">
+						</div>
+						<h3>Wednesday</h3>
+						<span>120 min | Acción</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="genres" id="genres">
+		<h2>Géneros</h2>
+		<div class="genres-container">
+			<div class="genres-card">
+				<img src="wallpapers/accion.jpg" class="card-img">
+				<a href="#accion"><div class="name">Acción</div></a>
+			</div>
+			<div class="genres-card">
+				<img src="wallpapers/terror.jpg" class="card-img">
+				<a href="#terror"><div class="name">Terror</div></a>
+			</div>
+			<div class="genres-card">
+				<img src="wallpapers/aventura.jpg" class="card-img">
+				<a href="#aventura"><div class="name">Aventura</div></a>
+			</div>
+			<div class="genres-card">
+				<img src="wallpapers/comedia.jpg" class="card-img">
+				<a href="#comedia"><div class="name">Comedia</div></a>
+			</div>
+			<div class="genres-card">
+				<img src="wallpapers/series.jpeg" class="card-img">
+				<a href="#series"><div class="name">Series</div></a>
+			</div>
+		</div>
+	</section>
+
+	<footer id="about">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-brand">
+					<a href="./index.html"><img src="./images/logo.png" class="footer-logo"></a>
+					<p class="slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore. </p>
+					<div class="social-link">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+					</div>
+				</div>	
+				<div class="footer-links">
+					<ul>
+						<li class="link-item"><a href="#">Cuenta</a></li>
+						<li class="link-item"><a href="#">Términos de uso</a></li>
+						<li class="link-item"><a href="#">Privacidad</a></li>
+						<li class="link-item"><a href="#">Sobre nosotros</a></li>
+						<li class="link-item contacts"><a href="#">Contactos</a></li>
+					</ul>
+					<ul>
+						<li class="link-item"><a href="#">Centro de ayuda</a></li>
+						<li class="link-item"><a href="#">Preguntas frecuentes</a></li>
+						<li class="link-item"><a href="#">Preferencia de Cookies</a></li>
+						<li class="link-item"><a href="#">Accesibilidad</a></li>
+						<li class="link-item"><a href="#">Planes</a></li>
+					</ul>
+				</div>		
+			</div>
+			<div class="footer-copyright">
+				<div class="copyright">
+					<p>&copy; Copyright 2023 Pixels</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
