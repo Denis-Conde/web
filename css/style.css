@@ -33,12 +33,11 @@ input, button, select {
 	border: none;
 	outline: none;
 } 
-
 a {
 	text-decoration: none;
 }
 body {
-	background-color: hsl(207, 19%, 11%);
+	background-color: #0a1014;
 }
 ::-webkit-scrollbar {
 	width: 14px;
@@ -72,19 +71,31 @@ body {
 	transition: 0.3s;
 }
 .header.down {
-	background: hsl(207, 19%, 11%);
+	background: #0a1014;
 	padding: 0 80px;
 }
 .navbar a {
 	position: relative;
 	font-size: 15px;
 	color: #e0e0e0;
-	font-weight: 300;
+	font-weight: 600;
 	margin-right: 20px;
-	padding: 0 10px;
-
 }
-.navbar a::after {
+.navbar a:hover {
+	color: #fff;
+}
+.navbar .btnLogin {
+	position: relative;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	color: var(--primary);
+	font-weight: 700;
+	cursor: pointer;
+}
+.navbar a::after, 
+.navbar .btnLogin::after {
 	content: "";
 	position: absolute;
 	background: var(--primary);
@@ -94,35 +105,21 @@ body {
 	bottom: -8px;
 	transition: 0.3s;
 }
-.navbar a:hover {
-	color: #fff;
-}
-.navbar a:hover::after {
+.navbar a:hover::after,
+.navbar .btnLogin:hover::after {
 	width: 100%;
 }
-.navbar .btnLogin {
-	position: relative;
-	background: transparent;
-	border: none;
-	outline: none;
-	font-size: 15px;
-	color: #fff;
-	font-weight: 500;
-	cursor: pointer;
-}
-.navbar .btnLogin::before {
+/*.navbar .btnLogin::after {
 	content: '';
 	position: absolute;
 	left: 0;
-	bottom: -7px;
+	bottom: -8px;
 	width: 100%;
 	height: 3px;
 	background: var(--primary);
-	opacity: .85;
-}
-
+}*/
 .wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	width: 450px;
@@ -160,7 +157,6 @@ body {
 	font-size: 24px;
 	color: #333;
 }
-
 .wrapper .logreg-box {
 	width: 100%;
 }
@@ -176,7 +172,6 @@ body {
 .wrapper.active .form-box.register {
 	display: block;
 }
-
 .logreg-box .logreg-title {
 	text-align: center;
 	margin-bottom: 40px;
@@ -220,8 +215,6 @@ body {
 .input-box input:valid~label {
 	top: -5px;
 }
-
-
 .input-box .icon {
 	position: absolute;
 	color: #fff;
@@ -304,8 +297,6 @@ body {
 	font-weight: 400;
 }
 
-
-
 /*Logo Pixels*/
 .logo {
 	width: 170px;
@@ -338,7 +329,7 @@ body {
 	box-shadow: 15px #000;
 }
 .title:hover {
-	transform: scale(1.05);
+	transform: scale(1.025);
 	cursor: pointer;
 	filter: drop-shadow(8px 8px 6px #00122d);
 }
@@ -415,20 +406,14 @@ body {
 	transform: translateY(-10px);
 	transition: 0.3s;
 }
-.movie-card .bookmark {
-	background-color: var(--oxford);
-	left: 15px;
-}
-.movie-card .bookmark:hover {
-	color: #fc1;
-}
 .box h3 {
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 700;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 .box span {
+	font-size: 12px;
 	color: #ddd;
 }
 .box:hover h3 {
@@ -491,15 +476,15 @@ footer {
 	justify-content: space-between;
 	align-items: flex-start;
 	border-bottom: 1px solid #162032cc;
-	padding-bottom: 20px; 
+	padding-bottom: 30px; 
 }
 .footer-brand {
 	width: 450px;
-	margin-right: 130px;
+	margin-right: 160px;
 }
 .footer-logo {
 	position: relative;
-	right: 32px;
+	right: 30px;
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -508,13 +493,16 @@ footer {
 	line-height: 20px;
 	margin-bottom: 20px;
 }
+.social-link {
+	display: flex;
+	justify-content: space-around;
+}
 .social-link a {
 	display: inline-block;
 }
 .social-link i {
 	color: #fff;
 	font-size: 25px;
-	margin-right: 42px;
 }
 .social-link i:hover {
 	color: var(--primary);
@@ -523,8 +511,9 @@ footer {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 50px;
+	gap: 60px;
 	align-items: flex-end;
+	margin-bottom: 35px;
 }
 .link-item {
 	font-size: 14px;
@@ -536,32 +525,44 @@ ul .link-item:not(:last-child) {
 .link-item a {
 	color: #ccc;
 }
-.contacts a {
-	color: #66c;
-}
 .link-item:hover a {
 	color: var(--primary);
 }
-
+.footer-aside {
+	width: 100%;
+}
+.contacts-container {
+	display: flex;
+	flex-direction: column;
+}
+.contacts-container h3 {
+	margin-bottom: 10px;
+}
+.contacts {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+.contacts div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.contacts div i {
+	margin-right: 7px;
+	color: var(--primary);
+	font-size: 14px;
+}
+.contacts div a {
+	margin-bottom: 8px;
+	color: #ccc;
+}
 .footer-copyright {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding-top: 20px;
 }
 .footer-copyright p {
 	font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
